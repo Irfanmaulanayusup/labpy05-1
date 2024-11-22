@@ -13,6 +13,7 @@ Mata kuliah : Bahasa Pemrograman <p>
 ### Penjelasan Program
 1. Header dan Kelas Student:
            
+```python      
        print("\nProgram Input Nilai")
        print("===================")
       
@@ -30,9 +31,11 @@ Mata kuliah : Bahasa Pemrograman <p>
    
       - Kode ini mencetak judul program dan mendefinisikan kelas ```Student``` yang memiliki atribut ```nim```, ```nama```, ```tugas```, ```uts```, ```uas```, dan ```akhir```.
       - ```calculate_final_grade``` adalah metode yang menghitung nilai akhir berdasarkan bobot tugas (30%), UTS (35%), dan UAS (35%).
+```
         
 2. Fungsi Menampilkan Menu dan Daftar Mahasiswa:
 
+```python
        def display_menu():
                      print("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari (K)eluar]: ", end=' ')
               
@@ -50,8 +53,10 @@ Mata kuliah : Bahasa Pemrograman <p>
           
    - ```display_menu``` menampilkan menu pilihan kepada pengguna.
    - ```display_students``` menampilkan daftar nilai mahasiswa dalam format tabel. Jika tidak ada data, pesan "TIDAK ADA DATA" akan ditampilkan.
+```
 3. Fungsi Mencari Indeks Mahasiswa:
 
+```python
           def find_student_index(students, nim):
               for index, student in enumerate(students):
                   if student.nim == nim:
@@ -59,8 +64,10 @@ Mata kuliah : Bahasa Pemrograman <p>
               return None
 
    - ```find_student_index``` mencari indeks mahasiswa berdasarkan NIM. Mengembalikan ```None``` jika NIM tidak ditemukan.
+```
 4. Fungsi Utama:
 
+```python
        def main():
            students = []
            while True:
@@ -112,7 +119,7 @@ Mata kuliah : Bahasa Pemrograman <p>
        
        if __name__ == "__main__":
            main()
-
+```
    - Fungsi ```main``` adalah fungsi utama yang menjalankan program.
    - Variabel ```students``` menyimpan daftar objek ```Student```.
    - Program menampilkan menu dan menangani pilihan pengguna:
